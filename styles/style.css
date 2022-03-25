@@ -1,0 +1,140 @@
+/* THIS IS THE BEGINNING OF THE FRONT PAGE */
+
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Zen Dots', cursive;
+  font-weight: bold;
+}
+
+body{
+  background-image:  url("../images/mondrian.png");
+  background-repeat: no-repeat;
+}
+    /* this places the mondrian image into the background */
+
+
+
+/* this section sets up the navigation bar and places the logo to the left */
+nav {
+  width: 90%;
+  height: 80px;
+  margin-left: 90px;
+ }
+
+ul{
+  float: right;
+  margin-right: 10px;
+}
+
+li{
+  display: inline-block;
+  line-height: 80px;
+  margin-top: 0 5px;
+}
+
+/* this section set the navigation button attributes */
+a {
+  width: 100px;
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 10px;
+  border: solid;
+  text-shadow: 2px 2px 4px purple;
+  background: yellow;
+  border-color: darkgreen;
+  background: yellow;
+}
+
+/* this section sets the hover effect  */
+a:hover{
+  background: red;
+  transition: 0.6s;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+/* this section sets the name image. I have created a name block as an image in this case */
+.names {
+  margin-top: 220px;
+  margin-left: 200px;
+}
+
+.heart {
+  position: absolute;
+  top: 10px;
+  left: 290px;
+  z-index: 1;
+}
+
+/* this section sets up the copyright footer */
+
+.copyright {
+font-family: 'Zen Dots', cursive;
+  font-weight: bold;
+  font-size: 10px;
+  position: fixed;
+  color: black;
+  bottom: 0;
+  width: 100%;
+  background-color: yellow;
+  line-height: 2;
+  text-align: center;
+  left: 0;
+}
+
+/* this section sets the responsivity when screen is larger*/
+@media (max-width: 1024px){
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+    }
+}
+
+/* this section sets the responsivity when screen reaches smaller size */
+@media (max-width: 700px){
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-image:url("../images/m1.jpg");
+    top: 80px;
+    left: -100;
+    text-align: center;
+    transition: all 0.5s;
+    }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 20px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  a:hover {
+    background:  #99ff33;
+    color: black; 
+  }
+}
+
+/* THIS IS THE END OF THE HOMEPAGE SECTION */
